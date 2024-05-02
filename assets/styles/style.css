@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Agregar posición relativa para alinear el navbar */
+}
+
+.TituloPpal a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    position: absolute; /* Alinear el navbar */
+    bottom: 0; /* Alinear en la parte inferior del header */
+    right: 20px; /* Alinear a la derecha */
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos al pasar el mouse sobre los enlaces del navbar */
+.navbar a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
