@@ -4,64 +4,92 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 5px;
+}
+
 header {
+    grid-column: 1 / span 4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 5px 5px;
     background-color: #333;
-    color: #fff;
     position: relative; /* Agregar posición relativa para alinear el navbar */
+    width: 100%;
+    height: 50%;
 }
 
-.TituloPpal a{
-    text-decoration: none;
-    color: #fff;
-}
-
-
-h1 {
-    margin: 0;
-}
-
-.navbar {
+.TituloPpal {
     display: flex;
-    position: absolute; /* Alinear el navbar */
-    bottom: 0; /* Alinear en la parte inferior del header */
-    right: 20px; /* Alinear a la derecha */
+    align-items: center; /* Alinear elementos verticalmente */
 }
 
 .navbar ul {
     display: flex;
-    list-style-type: none;
+    list-style-type: none; /* Eliminar viñetas de la lista */
     padding: 0;
 }
 
 .navbar li {
-    margin-right: 20px;
+    margin-right: 20px; /* Espacio entre elementos */
+    margin-bottom: 5px;
 }
 
-/* Estilos para los enlaces del navbar */
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: white; /* Color de enlaces */
 }
 
-/* Estilos al pasar el mouse sobre los enlaces del navbar */
-.navbar a:hover {
-    text-decoration: underline;
-    color: greenyellow;
+#Img1 {
+    grid-column: 1 / span 4;
+    
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+#Informes {
+    grid-column: 1 / span 2;
+    grid-row: 3;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+#Herramientas {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+
+#Testimonios {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+}
+
+#Img2 {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+}
+
+#Blog {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+#Origen {
+    grid-column: 4 / span 1;
+    grid-row: 6;
+}
+
+#Importancia {
+    grid-column: 4 / span 1;
+    grid-row: 7;
+}
+
+#DatosActualizados {
+    grid-column: 4 / span 1;
+    grid-row: 8;
+}
+
+footer {
+    grid-column: 1 / span 4;
+    grid-row: 9;
 }
